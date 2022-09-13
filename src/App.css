@@ -1,38 +1,718 @@
+html{
+  scroll-behavior: smooth;
+}
+.container
+{
+  max-width: fit-content;
+}
 .App {
-  text-align: center;
+  background-color: black;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body::-webkit-scrollbar {
+    display: none;
   }
+* {
+  font-family: Inter, sans-serif;
+}
+/* header code starts */
+.logo > img {
+  width: 10rem;
+  height: 3rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-menu {
+  margin-left: 1rem;
+}
+.navbar-light .navbar-toggler
+{
+  background-color: lightgrey;
+}
+.navbar-nav > a.nav-link > a.nav-link
+  {
+  color: white;
+  text-decoration: none;
+  z-index: 99;
+  cursor: pointer;
+}
+ .navbar-nav > a.nav-link > a.nav-link:hover {
+  color: #f48915;
+}
+#navbarSupportedContent > ul {
   display: flex;
-  flex-direction: column;
+  gap: 2rem;
+}
+.left-header {
+  display: flex;
+  justify-content: space-between;
+}
+.left-body-side {
+  margin-left: 1rem;
+  justify-content: space-between;
+  flex: 3 1;
+  padding: 1rem;
+}
+.right-body-side {
+  padding: 1rem;
+  background-color: #f48916;
+  flex: 1 1;
+}
+.right-header {
+  display: flex;
+  justify-content: flex-end;
+}
+.body {
+  display: flex;
+  justify-content: space-between;
+}
+.header-join-button {
+    margin-right: 1rem;
+  border-color: transparent;
+  background: white;
+  padding: 0.6rem;
+  font-weight: 700;
+}
+.header-join-button > a.nav-link
+{
+  padding: 0;
+  color: #000;
+}
+/* header code ends */
+
+/* best fitness club in the town component code starts*/
+.bestfitinthetown {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  position: relative;
+  width: fit-content;
+  margin-top: 3rem;
+  background-color: #393d42;
+  text-transform: uppercase;
+  color: white;
+  padding: 0.9rem;
+  border-radius: 4rem;
+}
+.bestfitinthetown > .empty-div {
+  left: 8px;
+  position: absolute;
+  height: 1.6rem;
+  background-color: #f48915;
+  width: 5rem;
+  z-index: -1;
+  border-radius: 4rem;
+}
+.bestfitinthetown > span {
+  z-index: 2;
+}
+/* best fitness club in the town component code ends*/
+
+/* shape your ideal body component code starts */
+.shape-your {
+  margin-top: 1.2rem;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+.ideal-body {
+  margin-bottom: 1.2rem;
+  font-size: 4.5rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+}
+/* shape your ideal body component code ends */
+
+/* White outline text (Shape) code starts */
+.stroke-text {
+  font-weight: 700;
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  margin: 0;
+}
+/* White outline text (Shape) code ends */
+
+/* heartbeat component code starts */
+.heartbeat {
+  margin: 2rem;
+  background-color: #464d53;
+  width: fit-content;
+  height: fit-content;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  position: absolute;
+  right: 1.5rem;
+}
+.heartbeat > img {
+  margin-top: 0.5rem;
+  width: 2rem;
+  margin-bottom: 1rem;
+}
+.heartbeat > .heartbeat-text {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #9c9c9c;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.heartbeat > .heartbeat-speed {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+/* heartbeat component code ends */
+
+
+/* shape and build your ideal body component code starts */
+
+.body-content-heading {
   color: white;
 }
+/* shape and build your ideal body component code ends */
 
-.App-link {
-  color: #61dafb;
+/* number counter component code starts */
+.number-counter {
+  color: white;
+  display: flex;
+}
+.number-counter-row {
+  display: flex;
+  gap: 2rem;
+}
+span.timer.counter {
+  font-size: 2rem;
+}
+p.counter-title {
+  color: #9c9c9c;
+  margin: 0px;
+  text-transform: uppercase;
+}
+/* number counter component code ends */
+
+/* get started button component code starts */
+.started-button {
+  display: flex;
+  gap: 1rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.started-button > button.get-started {
+  background-color: #f48915;
+  border-color: #f48915;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+}
+.started-button > button.learn-more {
+  background-color: transparent;
+  border-color: #f48915;
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+}
+/* get started button component code ends */
+
+/* Calories component code starts */
+.inner-body-number-calories {
+    position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.calories-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  background-color: #464d53;
+  padding: 1rem;
+  border-radius: 10px;
+  position: absolute;
+  right: 4rem;
+}
+.calories-text > h3 {
+  font-size: 1rem;
+    margin: 0;
+  color: #9c9c9c;
+  font-weight: 500;
+}
+.calories-text > .number , .calories-text > .weight {
+    margin: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: white;
+  }
+/* Calories component code ends */
+
+/* person tie shoes component code starts */
+.person-background
+{
+  top: 5rem;
+    position: absolute;
+    right: 26rem;
+}
+.person-tie-shoes > img.person-shoes {
+    position: absolute;
+    top: 8rem;
+    right: 12rem;
+  width: 22rem;
+  height: 28rem;
+}
+/* person tie shoes component code ends */
+
+/* explore programme component code starts */
+.explore-programme
+{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 4rem;
+}
+.explore-programme > .heading > h3.stroke-text
+{
+  margin: 0 0 2rem 2rem;
+font-size: 2.2rem;
+font-weight: 700;
+text-transform: uppercase;
+}
+.explore-programme > .heading > .programme
+{
+  margin: 0;
+  color: white;
+text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+/* explore programme component code ends */
+
+/* training programe component code starts */
+.training-programes
+{
+    display: flex;
+    padding:  0rem 3rem 1rem 3rem;
+    gap: 1rem;
+}
+.training-programe-container
+{
+    color: white;
+    background-color: gray;
+    padding:1rem 2rem;
+}
+.program-container
+{
+  display: flex;
+  padding:  0rem 2rem;
+}
+.program-details
+{
+  background: rgb(128, 128, 128);
+  color:white;
+  padding: 2rem;
+  margin-right: 1rem;
+}
+.program-details:hover
+{
+  background: linear-gradient(210.41deg, rgb(250, 80, 66) 1.14%, rgb(255, 167, 57) 100.75%);
+  cursor: pointer;
+}
+.program-image > img
+{
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.program-title
+{
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.program-description
+{
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+
+}
+/* training programe component code ends */
+
+/* Why choose us component code starts */
+
+.why-choose-us-container
+{
+  justify-content:center;
+  padding: 4rem 2rem 0rem 2rem;
+  display: flex;
+  gap: 5rem;
+}
+.left-side-image
+{
+  display: flex;
+}
+.left-side-image > .first-column
+{
+  margin-right: 1rem;
+}
+.left-side-image > .first-column >  img
+{
+width: 14rem;
+height: 28rem;
+}
+.left-side-image > .second-column >  img
+{
+width: 24rem;
+}
+.left-side-image > .second-column > .right-sub-column >  img
+{
+width: 12rem;
+height: 10rem;
+}
+.second-column > .right-sub-column
+{
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.right-side-content
+{
+  padding-left: 2rem;
+}
+.right-side-content > .some-reason
+{
+  text-transform: uppercase;
+  color: #f48915;
+  font-weight: 700;
+}
+.right-side-content > .why-choose-us
+{
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.right-side-content > div.reasons-to-use{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.right-side-content > div.reasons-to-use > h4{
+  font-size: 1rem;
+color: white;
+margin: 0;
+text-transform: uppercase;
+}
+.right-side-content > div.reasons-to-use > img{
+width: 2rem;  
+height: 2rem;}
+.right-side-content > .our-partner
+{
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #9c9c9c;
+}
+.right-side-content > .our-partner > .partner-images
+{
+  display: flex;
+  gap: 1rem;
+}
+.right-side-content > .our-partner > .partner-images > img
+{
+  width: 3rem;
+}
+/* Why choose us component code ends */
+
+/* Start your journey compoent code starts */
+.start-your-journey
+{
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  padding-top: 4rem;
+
+}
+.start-your-journey > .start-your-journey-heading > h3
+{
+  margin: 0 0 2rem 0;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  gap: 3rem;
+}
+.start-journey-cards
+{
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.journey-details
+{
+  padding: 2rem;
+  background-color: #656565;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.journey-details > .plan-title
+{
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.journey-details > .plan-price
+{
+font-size: 3rem;
+font-weight: 700;
+margin-bottom: 1rem;
+}
+.journey-details > .plan-description
+{
+margin-bottom: 1rem;
+line-height: 1.8rem;
+}
+.journey-details > .join-now
+{
+  cursor: pointer;
+  font-size: 0.8rem;
+background-color: white;
+color: black;
+padding: 0.8rem 0rem;
+text-align: center;
+font-weight: 600;
+}
+.start-journey-cards > div:nth-child(2)
+{
+  background:linear-gradient(210.41deg,#fa5042 1.14%,#ffa739 100.75%);
+}
+.plan-description > .description
+{
+display: flex;
+gap: 1rem;
+align-items: center;
+}
+.plan-description > .description > img
+{
+ width: 1.3rem; 
+ height: 1.3rem;
+}
+.plan-description > .see-more-benefits
+{
+  font-size: 0.9rem;
+}
+/* Start your journey compoent code ends */
+
+/* Testimonials component code starts */
+.testimonials
+{
+  margin-top: 4rem;
+  display: flex;
+  padding: 0rem 2rem;
+}
+.left-side-testimonials
+{
+  width: 60%;
+}
+.testimonials > .left-side-testimonials > .testimonial-first-heading > h3
+{
+color: #f48915;
+text-transform: uppercase;
+font-weight: 700;
+}
+.testimonials > .left-side-testimonials > .testimonial-second-heading
+{
+color: white;
+font-size: 3rem;
+text-transform: uppercase;
+
+}
+.testimonials > .left-side-testimonials > .testimonial-third-heading> h3
+{
+  margin: 1rem 0rem 0rem 0rem;
+color: white;
+font-size: 3rem;
+text-transform: uppercase;
+font-weight: 700;
+}
+
+.testimonials-detail-data
+{
+  color: white;
+}
+.testimonials-detail-data > .testimonial-review
+{
+  padding-top: 2rem;
+  letter-spacing: 2px;
+line-height: 1.8rem;}
+.testimonials-detail-data > .testimonial-name-status > span.name
+{
+  color: #f48915;
+}
+.right-side-testimonials  > img
+{
+  width: 17rem;
+  height: 20rem;
+}
+.testimonial-arrows
+{
+  display: flex;
+  gap: 1rem;
+}
+.testimonial-arrows> img
+{
+width: 1.5rem;
+height: 1.5rem;}
+
+.testimonial-name-status
+{
+  padding-top: 2rem;
+}
+/* Testimonials component code ends */
+
+/* Join us form component code starts */
+.join-us-form
+{
+  display: flex;
+  padding: 0% 2rem;
+  margin-top: 4rem;
+}
+.join-us-form  > .left-join-us
+{
+  width: 50%;
+}
+.left-join-us  > hr
+{
+  border: 2px solid #f48915;
+  border-radius: 20%;
+  width: 11rem;
+  position: absolute;
+}
+.join-us-form  > .left-join-us > h3
+{
+  font-weight: 700;
+  margin: 1rem 0rem 0rem 0rem;
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.join-us-form  > .right-join-us > form > button
+{
+    color: white;
+background-color: #f48915;
+padding: 0.5rem 1rem;
+font-weight: 600;
+border-color: transparent;
+cursor: pointer;
+}
+
+.join-us-form  > .right-join-us > form > input
+{
+    color: #ffffff;
+background-color: transparent;
+border: 1px solid transparent;
+outline: 0;
+}
+
+.join-us-form  > .right-join-us > form > input::placeholder
+{
+  color: white;
+}
+.right-join-us
+{
+  margin: auto 0;
+}
+.join-us-form  > .right-join-us > form 
+{
+  padding: 1rem;
+display: flex;
+gap: 3rem;
+background-color: gray;
+}
+/* Join us form component code ends*/
+
+/* Footer component code starts */
+.footer-container
+{
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 4rem;
+margin-top: 4rem;
+  border-top: 1px solid white;
+}
+.footer-container > img
+{
+  width: 2rem;
+  height: 2rem;
+}
+.footer-logo
+{
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.footer-logo > img
+{
+  width: 2rem;
+  height: 2rem;
+}
+/* Footer component code ends */
+
+/* media query code starts */
+@media screen and (max-width:1024px) and (min-width:768px)
+{
+  .why-choose-us-container
+  {
+    display: block;
   }
 }
+@media screen and (max-width:767px)
+{
+  
+  .right-side-content > div.reasons-to-use > h4 {
+    margin-left: 1rem;
+  }
+  .explore-programme , .start-your-journey , .program-container , .left-side-image , .why-choose-us-container, .testimonials , .join-us-form , .start-journey-cards , .body , .inner-body-number-calories , .second-column > .right-sub-column, .join-us-form > .right-join-us > form
+  {
+    display: block;
+  }
+
+  .program-details
+  {
+    margin-bottom: 1rem;
+  }
+  .join-us-form > .left-join-us , .left-side-testimonials , .left-side-image > .second-column > img , .left-side-image > .second-column > .right-sub-column > img, .left-side-image > .first-column > 
+  {
+    width: 100%;
+  }
+  .join-us-form > .left-join-us > h3
+  {
+    padding: 2rem 0rem ;
+  }
+  .journey-details
+  {
+    margin: 0 2rem 2rem 2rem;
+  }
+  .person-tie-shoes > img.person-shoes , .heartbeat
+  {
+    position: inherit;
+  }
+.calories-container
+  {
+    position: inherit;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar-collapse
+  {
+    background-color: lightgray;
+  }
+  .header-menu  {
+    position: fixed;
+      top: 5%;
+      right: 0;
+      left: 60%;
+      z-index: 1030;
+  }
+}
+/* media query code ends*/
