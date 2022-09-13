@@ -21,6 +21,7 @@ import WhyChooseUs from "./components/WhyChooseUs";
 import PersonBackground from "./PersonBackground";
 
 function App() {
+  //testing 
   return (
     <div className="App">
       <div className="body">
